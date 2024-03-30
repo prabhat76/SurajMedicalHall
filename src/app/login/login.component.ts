@@ -5,8 +5,13 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.css',
+  host: {ngSkipHydration: 'true'},
+
 })
 export class LoginComponent {
 
+  public ONClick(){
+    console.log("Prabhat loves Nitu ")
+  }
 }
