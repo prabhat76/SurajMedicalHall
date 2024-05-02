@@ -10,8 +10,5 @@ import { Component } from '@angular/core';
 
 })
 export class LoginComponent {
-
- public  ONClick(){
-    console.log("Prabhat loves Nitu ")
-  }
+  
 }
