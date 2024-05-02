@@ -13,4 +13,8 @@ export class RegisterComponent {
   Number="Phone Number";
   Password="Password";
   Forget="Forget";
+
+  getDashboard(){
+    console.log("Welcome to Suraj Medical hall")
+  }
 }
