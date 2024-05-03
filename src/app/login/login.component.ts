@@ -10,5 +10,8 @@ import { Component } from '@angular/core';
 
 })
 export class LoginComponent {
-  
+  Login="Shop with Sura Medical";
+ onLogin(){
+  console.log("Login To Suraj Medical Hall")
+ } 
 }
