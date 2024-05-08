@@ -11,6 +11,10 @@ import { Router } from '@angular/router';
 
 })
 export class LoginComponent implements OnInit{
+
+  //username:string;
+  //password:string;
+
   ngOnInit(): void {
    
   }
@@ -19,6 +23,10 @@ export class LoginComponent implements OnInit{
   }
   Login="Shop with Suraj Medical";
  onLogin(){
+  // if (this.username === 'admin' && this.password === 'password') {
+  //   console.log("Login To Suraj Medical Hall");
+  //   return this.router.navigate(['/dashbaord']);
+  //   } else{
   console.log("Login To Suraj Medical Hall");
   return this.router.navigate(['/dashbaord']);
  } 
