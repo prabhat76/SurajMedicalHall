@@ -23,38 +23,39 @@ export class AppComponent implements OnInit{
 
   
   ngOnInit(){
-this.myObservable.subscribe((val:any, num:number)=>{
-  console.log(val);
-  console.log(num)
-},
-(error:any)=>{
-  alert(error.message);
-},
-()=>{
-  alert('the callback function is succesful and now can break anytime soon')
-}),
-this.myArrayObservable.subscribe((num:any)=>{
-  console.log(num)
-}
-)
+//this.myObservable.subscribe((val:any, num:number)=>{
+ // console.log(val);
+  //console.log(num)
+//},
+//(error:any)=>{
+  //alert(error.message);
+//},
+//()=>{
+ // alert('the callback function is succesful and now can break anytime soon')
+//}),
+//this.myArrayObservable.subscribe((num:any)=>{
+ // console.log(num)
+//}
+//)
   }
 
-  myObservable = Observable.create((sample :any )=>{
-    setTimeout(()=>sample.next("A"));
-    setTimeout(()=>num.slice(2, 4))
-    setTimeout(()=> {sample.complete()}, 1000);
+ // myObservable = Observable.create((sample :any )=>{
+    //setTimeout(()=>sample.next("A"));
+    //setTimeout(()=>num.slice(2, 4))
+    //setTimeout(()=> {sample.complete()}, 1000);
     
     // setTimeout(()=> {sample.error(new Error('Something went wrong , Plese try again soem time later')), 4000}
     // )
-  })
+  //})
 
-  myArrayObservable = Observable.create((samplee :any) =>{
-    setTimeout(()=>samplee.num);
-  })
+ // myArrayObservable = Observable.create((samplee :any) =>{
+    //setTimeout(()=>samplee.num);
+  //})
 
+//}
+
+//let num= [1,2,3,4,5,6,7,8,9];
+//console.log(num);
+//let num1=num.slice(2);
+//console.log(num1);
 }
-
-let num= [1,2,3,4,5,6,7,8,9];
-console.log(num);
-let num1=num.slice(2);
-console.log(num1)
