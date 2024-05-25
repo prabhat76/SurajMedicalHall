@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './dashbaord.component.css'
 })
 export class DashbaordComponent {
-
+Welcome="Welcome to Suraj Medical Hall"
+  
 }
